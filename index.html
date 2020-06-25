@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+
+        }
+        .header-content{
+            width: 100%;
+            margin: 1%;
+            background-color: brown;
+        }
+        .daily-info{
+            width: 48%;
+            margin: 0;
+            float: left;
+            
+        }
+        .more-links{
+            width: 48%;
+            margin: 0;
+            float: right;
+            
+        }
+        .more-links a{
+            text-decoration-color: greenyellow;
+        }
+        .category{
+            margin-left: 5%;
+            margin-right: 7%;
+        }
+        .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #303e45 !important;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropbtn {color: white;}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+.dropdown:hover .dropbtn {background-color: #303e45;}
+
+        .content{
+            margin-top: 3%;
+            margin-right: 7%;
+            margin-left: 5%;
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            position:static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #23323F;
+            color: rgb(5, 5, 5);
+            text-align: center;
+        }
+        .wafa-links{
+            margin-right: 1%;
+            margin-left: 2%;
+            float: left;
+        }
+        .wafa{
+            width: 48%;
+            margin-right: 2%;
+            margin-left: 3%;
+            margin-bottom:0;
+            margin-top: 0;
+            float: right;
+        }
+    </style>
+    <title>wafa</title>
+  </head>
+  <body>
+      <div class="header">
+        <div class="header-content">
+            <div class="daily-info">
+                <nav style="width: fit-content;" class="nav">
+                    <a class="nav-link" href="#">الخميس , 25 حزيران 2020</a>
+                    <a class="nav-link" href="#">حالة الطقس</a>
+                    
+                </nav>
+            </div>
+            <div class="more-links">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://french.wafa.ps/">Français</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://English.wafa.ps">English</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://info.wafa.ps/">مركز المعلومات الفلسطيني</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.wafa.ps/">الصفحة الرئيسية</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img style="margin-left: 5%;" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
+            </a>
+        </div>
+
+        <div class="category">
+            <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">المزيد</button>
+                        <div class="dropdown-content">
+                          <a href="#">شؤون الأسرى</a>
+                          <a href="#">شؤون المرأة</a>
+                          <a href="#">شخصيات</a>
+                          <a href="#">صور مميزة</a>
+                          <a href="#">مؤسسات فلسطينية</a>
+                          <a href="#">مدن فلسطينية</a>
+                          <a href="#">محليات</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">رياضة</button>
+                        <div class="dropdown-content">
+                          <a href="#">بطولات عالمية</a>
+                          <a href="#">بطولات محلية</a>
+                          <a href="#">كرة سلة</a>
+                          <a href="#">كرة قدك</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">ثقافة وتراث</button>
+                        <div class="dropdown-content">
+                          <a href="#">شؤون دينية</a>
+                          <a href="#">معارض</a>
+                          <a href="#">مناسبات</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">انتهاكات اسرائيلية</button>
+                        <div class="dropdown-content">
+                          <a href="#">اغلاقات</a>
+                          <a href="#">حروب</a>
+                          <a href="#">مواجهات</a>
+                          <a href="#">جنازات</a>
+                          <a href="#">اجتياحات</a>
+                          <a href="#">استيطان</a>
+                          <a href="#">هدم منازل</a>
+                          <a href="#">اعتقالات</a>
+                          <a href="#">الجدار</a>
+                          <a href="#">الانتفاضة الثانية</a>
+                          <a href="#">الانتفاضة الاولى</a>
+                          <a href="#">مجازر اسرائيلية</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">قصص مصورة</button>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">نشاطات</button>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">شهداء فلسطين</button>
+                        <div class="dropdown-content">
+                          <a href="http://images.wafa.ps/category.aspx?catid=263">شهداء فلسطين</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">مجلس الوزراء</button>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">الرئاسة</button>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">الرئيسية</button>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="5000">
+                    <img src="image/img1.jpg" class="d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105304">
+                        برعاية وحضور رئيس الوزراء محمد اشتية، توقيع اتفاقية دعم اسباني بقيمة 100 مليون يورو.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105303">
+                        برعاية وحضور رئيس الوزراء محمد اشتية،إطلاق مشروع التأهيل والتشغيل في مجال السلامة والصحة المهنية وضبط الجودة للمهندسين.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105302">
+                        برعاية وحضور رئيس الوزراء محمد اشتية توقيع اتفاقية دعم ألماني لقطاع الصرف الصحي في سلفيت.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     <a href="http://images.wafa.ps/album.aspx?id=105301">
+                        مواطنون يرتدون كمامات خلال تجولهم في مدينة نابلس.
+                     </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105299">
+                        إغلاق المستشفى الوطني في نابلس مؤقتاً بعد تشخيص حالة مصابة بفيروس كورونا لمريض كان يتلقى العلاج في المستشفى.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     <a href="http://images.wafa.ps/album.aspx?id=105298">
+                        الاحتلال يعتدي على المواطنين المشاركين في المؤتمر الوطني لمواجهة مخططات الضم في قرية فصايل بالاغوار.
+                     </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img7.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105297">شخصيات شعبية ورسمية ترتدي الكمامات للوقاية من انتشار فايروس كورونا اثناء مشاركتها في المؤتمر الوطني الثاني لمواجهة مخططات الضم في قرية فصايل في الاغوار.</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <img src="image/img8.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <a href="http://images.wafa.ps/album.aspx?id=105296">
+                        المؤتمر الوطني الثاني لمواجهة مخططات الضم الاسرائيلية في قرية فصايل في الاغوار.
+                      </a>
+                    </div>
+                  </div>
+                 
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">السابق</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">التالي</span>
+                </a>
+              </div>
+        </div>
+        <div class="more">
+            <div class="new"></div>
+
+            <div class="slider-row">
+                <div> 
+                    <div class="card" style="width: 18rem; margin: 0; float: left;">
+                        <div class="card-body">
+                            <p class="card-text">عين على فلسطين</p>
+                        </div>
+                        <a href="http://images.wafa.ps/bigphoto/imagesfolder/42_51_14_31_5_20204.jpeg">
+                            <img src="image/eyeOnPalestine.jpeg" class="card-img-top" alt="...">
+                        </a>
+                                                
+                    </div>
+                    <div class="card" style="width: 18rem; float: left;">
+                        <div class="card-body">
+                            <p class="card-text">حدق في مثل هذا اليوم</p>
+                        </div>
+                        <a href="http://images.wafa.ps/event.aspx">
+                            <img src="image/at this day.jpg" class="card-img-top" alt="...">
+                        </a>
+                                                
+                    </div>
+                    <div class="card" style="width: 18rem; float: right;">
+                        <div class="card-body">
+                            <p class="card-text">قصة مصورة</p>
+                        </div>
+                        <a href="http://images.wafa.ps/category.aspx?catid=262">
+                            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+                        </a>
+                                                
+                    </div>
+                </div>
+            </div>
+
+            <div class="wafa-categories"></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="wafa-links">
+            <a href="http://images.wafa.ps/search.aspx">بحث متقدم</a>
+            <a href="http://images.wafa.ps/atemplate.aspx?id=3">اتصل بنا</a>
+            <a href="http://images.wafa.ps/atemplate.aspx?id=4">من نحن</a>
+            <a href="http://images.wafa.ps/index.aspx">الرئيسية</a>
+            <span>عدد الزوار 3698525</span>
+        </div>
+        <div class="wafa">
+            <p>جميع الحقوق محفوظة لوكالة الأنباء والمعلومات الفلسطينية وفا © 2020</p>
+        </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
