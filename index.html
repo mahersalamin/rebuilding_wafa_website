@@ -8,8 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
-        *{
-            box-sizing: border-box;
+       *{
+          box-sizing: border-box;
         }
         .header{
             width: 100%;
@@ -80,28 +80,70 @@
             margin-left: 5%;
             margin-bottom: 0;
         }
+        .new{
+          width: 100%;
+          height: 200px;
+        }
+        #myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
         
+        .wafa-category-word span{
+          text-align: right;
+
+        }
         .footer {
             position:static;
             left: 0;
             bottom: 0;
             width: 100%;
+            height: 45px;
             background-color: #23323F;
-            color: rgb(5, 5, 5);
+            margin-top: 2%;
             text-align: center;
         }
         .wafa-links{
-            margin-right: 1%;
+            width: 50%;
+            direction: rtl;
+            position: absolute;
             margin-left: 2%;
             float: left;
         }
+        .wafa-links a{
+          color: blanchedalmond;
+        }
+        .wafa-links span{
+          color: blanchedalmond;
+        }
         .wafa{
+          position: static;
             width: 48%;
             margin-right: 2%;
             margin-left: 3%;
             margin-bottom:0;
             margin-top: 0;
             float: right;
+        }
+        .wafa p{
+          color: blanchedalmond;
         }
     </style>
     <title>wafa</title>
@@ -143,98 +185,119 @@
                 <img style="margin-left: 5%;" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
             </a>
         </div>
+        
 
-        <div class="category">
+        <div class="category ">
             <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">المزيد</button>
+                        <button class="dropbtn">
+                          <a href="more.html">المزيد</a>
+                        </button>                        
                         <div class="dropdown-content">
-                          <a href="#">شؤون الأسرى</a>
-                          <a href="#">شؤون المرأة</a>
-                          <a href="#">شخصيات</a>
-                          <a href="#">صور مميزة</a>
-                          <a href="#">مؤسسات فلسطينية</a>
-                          <a href="#">مدن فلسطينية</a>
-                          <a href="#">محليات</a>
+                          <a href="prisonerAffairs.html">شؤون الأسرى</a>
+                          <a href="womanAffairs.html">شؤون المرأة</a>
+                          <a href="dignitaries.html">شخصيات</a>
+                          <a href="specialPictures.html">صور مميزة</a>
+                          <a href="palestinianInstitutions.html">مؤسسات فلسطينية</a>
+                          <a href="palestinianCities.html">مدن فلسطينية</a>
+                          <a href="localities.html">محليات</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">رياضة</button>
+                        <button class="dropbtn"><a href="sport.html">رياضة</a></button>
                         <div class="dropdown-content">
-                          <a href="#">بطولات عالمية</a>
-                          <a href="#">بطولات محلية</a>
-                          <a href="#">كرة سلة</a>
-                          <a href="#">كرة قدك</a>
+                          <a href="worldChampionships.html">بطولات عالمية</a>
+                          <a href="localChampionships.html">بطولات محلية</a>
+                          <a href="basketBall.html">كرة سلة</a>
+                          <a href="footBall.html">كرة قدم</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">ثقافة وتراث</button>
+                        <button class="dropbtn">
+                          <a href="cultureAndHeritage.html">ثقافة وتراث</a>
+                        </button>                        
                         <div class="dropdown-content">
-                          <a href="#">شؤون دينية</a>
-                          <a href="#">معارض</a>
-                          <a href="#">مناسبات</a>
+                          <a href="religiousAffairs.html">شؤون دينية</a>
+                          <a href="exhibitions.html">معارض</a>
+                          <a href="occasions.html">مناسبات</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">انتهاكات اسرائيلية</button>
+                        <button class="dropbtn">
+                          <a href="israeliViolations.html">انتهاكات اسرائيلية</a>
+                        </button>
+                        
                         <div class="dropdown-content">
-                          <a href="#">اغلاقات</a>
-                          <a href="#">حروب</a>
-                          <a href="#">مواجهات</a>
-                          <a href="#">جنازات</a>
-                          <a href="#">اجتياحات</a>
-                          <a href="#">استيطان</a>
-                          <a href="#">هدم منازل</a>
-                          <a href="#">اعتقالات</a>
-                          <a href="#">الجدار</a>
-                          <a href="#">الانتفاضة الثانية</a>
-                          <a href="#">الانتفاضة الاولى</a>
-                          <a href="#">مجازر اسرائيلية</a>
+                          <a href="closures.html">اغلاقات</a>
+                          <a href="wars.html">حروب</a>
+                          <a href="confrontations.html">مواجهات</a>
+                          <a href="funerals.html">جنازات</a>
+                          <a href="invasions.html">اجتياحات</a>
+                          <a href="settelment.html">استيطان</a>
+                          <a href="housesDemolished.html">هدم منازل</a>
+                          <a href="arrests.html">اعتقالات</a>
+                          <a href="wall.html">الجدار</a>
+                          <a href="secondUprising.html">الانتفاضة الثانية</a>
+                          <a href="firstUprising">الانتفاضة الاولى</a>
+                          <a href="israeliMassacres.html">مجازر اسرائيلية</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
+                    
                     <div class="dropdown">
-                        <button class="dropbtn">قصص مصورة</button>
+                        <button class="dropbtn">
+                          <a href="picturedStories.html">قصص مصورة</a>
+                        </button>
+                        <a href="picturedStories.html"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="activities.html">نشاطات</a>
+                        </button>
+                        <a href="activities.html"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                        </div>
                         
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">نشاطات</button>
-                        
+                        <button class="dropbtn">
+                          <a href="palestineMartyrs.html">مجلس الوزراء</a>
+                        </button>                        
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">شهداء فلسطين</button>
-                        <div class="dropdown-content">
-                          <a href="http://images.wafa.ps/category.aspx?catid=263">شهداء فلسطين</a>
-                        </div>
+                        <button class="dropbtn">
+                          <a href="presidency.html">الرئاسة</a> 
+                        </button>
+                                               
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn">مجلس الوزراء</button>
-                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">الرئاسة</button>
-                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">الرئيسية</button>
+                        <button class="dropbtn">
+                          <a href="index.html">الرئيسية</a>
+                        </button>
                         
                     </div>
                 </li>
@@ -243,8 +306,8 @@
 
     </div>
     <div class="content">
-        <div class="slider">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div class="slider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -254,7 +317,7 @@
                   <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
                   <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner ">
                   <div class="carousel-item active" data-interval="5000">
                     <img src="image/img1.jpg" class="d-block w-100" >
                     <div class="carousel-caption d-none d-md-block">
@@ -263,6 +326,7 @@
                       </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -271,6 +335,7 @@
                       </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -279,6 +344,7 @@
                       </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img4.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -287,6 +353,7 @@
                      </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img5.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -295,6 +362,7 @@
                       </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img6.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -303,12 +371,14 @@
                      </a>
                     </div>
                   </div>
+
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img7.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <a href="http://images.wafa.ps/album.aspx?id=105297">شخصيات شعبية ورسمية ترتدي الكمامات للوقاية من انتشار فايروس كورونا اثناء مشاركتها في المؤتمر الوطني الثاني لمواجهة مخططات الضم في قرية فصايل في الاغوار.</a>
                     </div>
                   </div>
+                  
                   <div class="carousel-item" data-interval="5000">
                     <img src="image/img8.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -327,60 +397,225 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">التالي</span>
                 </a>
+          </div>
+      </div>
+        
+      <div class="more">
+        <div class="new">
+     <!--     <div class="container py-2">
+              <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 offset-lg-2" id="slider">
+                  <div id="myCarousel" class="carousel slide shadow">
+                    
+                    <div class="carousel-inner">
+                      <div class="active carousel-item" data-slide-number="0">
+                        <table>
+                          <tr>
+                            <td>
+                              <div>
+                                <a href="#">
+                                 <img src="image/smallSliderimg1.jpg" alt="">
+                                </a>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <a href="#">
+                                 <img src="image/smallSliderimg1.jpg" alt="">
+                                </a>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <a href="#">
+                                 <img src="image/smallSliderimg1.jpg" alt="">
+                                </a>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <a href="#">
+                                 <img src="image/smallSliderimg1.jpg" alt="">
+                                </a>
+                              </div>
+                            </td>
+                         </tr>
+                       </table>
+                      </div>
+                      <div class="carousel-item" data-slide-number="1">
+                        <img src="http://placehold.it/1200x480/888/FFF" class="img-fluid">
+                      </div>
+                      <div class="carousel-item" data-slide-number="2">
+                        <img src="http://placehold.it/1200x480&amp;text=three" class="img-fluid">
+                      </div>
+                      <div class="carousel-item" data-slide-number="3">
+                        <img src="http://placehold.it/1200x480&amp;text=four" class="img-fluid">
+                      </div>
+                      <div class="carousel-item" data-slide-number="4">
+                        <img src="http://placehold.it/1200x480&amp;text=five" class="img-fluid">
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>          
+                    </div>
+                    
+          
+          
+                    <ul class="carousel-indicators list-inline mx-auto border px-2">
+                      <li class="list-inline-item active">
+                        <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                          <img src="http://placehold.it/80x60&amp;text=one" class="img-fluid">
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                          <img src="http://placehold.it/80x60&amp;text=two" class="img-fluid">
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                          <img src="http://placehold.it/80x60&amp;text=three" class="img-fluid">
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                          <img src="http://placehold.it/80x60&amp;text=four" class="img-fluid">
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a id="carousel-selector-4" data-slide-to="4" data-target="#myCarousel">
+                          <img src="http://placehold.it/80x60&amp;text=five" class="img-fluid">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+              
+          </div>
+          -->
         </div>
-        <div class="more">
-            <div class="new"></div>
 
-            <div class="slider-row">
-                <div> 
-                    <div class="card" style="width: 18rem; margin: 0; float: left;">
-                        <div class="card-body">
-                            <p class="card-text">عين على فلسطين</p>
-                        </div>
-                        <a href="http://images.wafa.ps/bigphoto/imagesfolder/42_51_14_31_5_20204.jpeg">
-                            <img src="image/eyeOnPalestine.jpeg" class="card-img-top" alt="...">
-                        </a>
-                                                
-                    </div>
-                    <div class="card" style="width: 18rem; float: left;">
-                        <div class="card-body">
-                            <p class="card-text">حدق في مثل هذا اليوم</p>
-                        </div>
-                        <a href="http://images.wafa.ps/event.aspx">
-                            <img src="image/at this day.jpg" class="card-img-top" alt="...">
-                        </a>
-                                                
-                    </div>
-                    <div class="card" style="width: 18rem; float: right;">
-                        <div class="card-body">
-                            <p class="card-text">قصة مصورة</p>
+            <div style="width: 100%; margin-bottom: 0; margin-top: 25px;" class="slider-row">
+              <div style="width:100%; height:fit-content;"> 
+                <table>
+                  <tr style="height: 100%;">
+                    <td>
+                      <div class="card" style="width: 18rem; height: 100%; margin: 15px;">
+                        <div class="card-body"style="height: 90%;">
+                          <p class="card-text">قصة مصورة</p>
                         </div>
                         <a href="http://images.wafa.ps/category.aspx?catid=262">
-                            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
-                        </a>
-                                                
-                    </div>
-                </div>
-            </div>
+                          <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+                        </a>                                                    
+                      </div>
+                    </td>
 
-            <div class="wafa-categories"></div>
+                    <td>
+                      <div class="card" style="width: 18rem; height: 100%; margin: 15px;">
+                        <div class="card-body"style="height: 90%;">
+                          <p class="card-text">حدق في مثل هذا اليوم</p>
+                        </div>
+                        <a href="http://images.wafa.ps/event.aspx">
+                          <img src="image/at this day.jpg" class="card-img-top" alt="...">
+                        </a>                                                
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="card" style="width: 18rem ;height: 100%; margin: 15px;">
+                        <div class="card-body" style="height: 90%;">
+                          <p class="card-text">عين على فلسطين</p>
+                        </div>
+                        <a href="http://images.wafa.ps/bigphoto/imagesfolder/42_51_14_31_5_20204.jpeg">
+                          <img src="image/eyeOnPalestine.jpeg" class="card-img-top" alt="عين على فلسطين">
+                        </a>                                                
+                      </div>
+                    </td>
+
+                  </tr>
+                </table>
+                
+                
+                
+                  
+              </div>
+            </div>
+          <div class="wafa-category-word">
+            <span>تصنيفات وفا</span>
+          </div>
+
+
+          <div class="wafa-categories">
+            <table>
+              <tr>
+                <td>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <img src="image/pictured story.JPG" class="card-img-down" alt="...">
+                  </div>
+                  
+                </td>
+
+                <td>
+                  <div class="card" style="width: 18rem; margin: 10px;">              
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <img src="image/pictured story.JPG" class="card-img-down" alt="...">
+                  </div>
+                </td>
+
+                <td>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <img src="image/pictured story.JPG" class="card-img-bottom" alt="...">
+                  </div>
+                </td>
+
+                <td>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <img src="image/pictured story.JPG" class="card-img-bottom" alt="...">
+                  </div>
+                </td>                
+              </tr>
+
+            </table>           
+
+          </div>
+
+
         </div>
 
     </div>
 
-    <div class="footer">
+<!--  <div class="footer">
         <div class="wafa-links">
-            <a href="http://images.wafa.ps/search.aspx">بحث متقدم</a>
-            <a href="http://images.wafa.ps/atemplate.aspx?id=3">اتصل بنا</a>
-            <a href="http://images.wafa.ps/atemplate.aspx?id=4">من نحن</a>
-            <a href="http://images.wafa.ps/index.aspx">الرئيسية</a>
-            <span>عدد الزوار 3698525</span>
+
+          <span>عدد الزوار 3698525</span>
+          <a href="http://images.wafa.ps/search.aspx">بحث متقدم</a>
+          <a href="http://images.wafa.ps/atemplate.aspx?id=3">اتصل بنا</a>
+          <a href="http://images.wafa.ps/atemplate.aspx?id=4">من نحن</a>
+          <a href="http://images.wafa.ps/index.aspx">الرئيسية</a>
+            
         </div>
         <div class="wafa">
             <p>جميع الحقوق محفوظة لوكالة الأنباء والمعلومات الفلسطينية وفا © 2020</p>
         </div>
     </div>
+    -->
     
 
     <!-- Optional JavaScript -->
