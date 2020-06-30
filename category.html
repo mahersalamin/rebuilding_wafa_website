@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <style>
+        *{
+          box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+
+        }
+        .header-content{
+            width: 100%;
+            margin: 1%;
+            background-color: brown;
+        }
+        .daily-info{
+            width: 48%;
+            margin: 0;
+            float: left;
+            
+        }
+        .more-links{
+            width: 48%;
+            margin: 0;
+            float: right;
+            
+        }
+        .more-links a{
+            text-decoration-color: greenyellow;
+        }
+        .category{
+            margin-left: 5%;
+            margin-right: 7%;
+        }
+        .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #303e45 !important;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropbtn {color: white;}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+.dropdown:hover .dropbtn {background-color: #303e45;}
+
+.separator{
+      width: 100%;
+      border-top: black 1px solid;
+      margin-top: 2%;
+      margin-bottom: 3%;
+    }
+    .separator a{
+      float: right;
+      color: black;
+      margin-right: 7%;
+      margin-top: 1%;      
+    }
+    .section{
+      margin-right: 7%;
+      margin-left: 5%;
+      height: 50px;
+      background-color: rgb(204, 199, 199);
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    
+    
+    </style>
+    <title>الرئاسة</title>
+  </head>
+  <body>
+    <div class="header">
+        <div class="header-content">
+            <div class="daily-info">
+                <nav style="width: fit-content;" class="nav">
+                    <a class="nav-link" href="#">الخميس , 25 حزيران 2020</a>
+                    <a class="nav-link" href="#">حالة الطقس</a>
+                    
+                </nav>
+            </div>
+            <div class="more-links">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://french.wafa.ps/">Français</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://English.wafa.ps">English</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://info.wafa.ps/">مركز المعلومات الفلسطيني</a>
+                    </li>
+                    <span>|</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.wafa.ps/">الصفحة الرئيسية</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img style="margin-left: 5%;" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
+            </a>
+        </div>
+        
+
+        <div class="category ">
+            <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="more.html">المزيد</a>
+                        </button>                        
+                        <div class="dropdown-content">
+                          <button class="dropbtn" id="prisoneraffairsbutton" onclick="prisonerAffairs()" value="شؤون الأسرى"> 
+                            شؤون الأسرى
+                          </button>
+                          <button class="dropbtn" id="womanaffairsbutton" onclick="womanAffairs()" value="شؤون المرأة ">
+                            شؤون المرأة
+                          </button>
+                          <button class="dropbtn" id="dignitariesbutton" onclick="dignitaries()" value="شخصيات">
+                            شخصيات
+                          </button>
+                          <button class="dropbtn" id="specialpicturesbutton" onclick="specialPictures()" value="صور مميزة">
+                            صور مميزة
+                          </button>
+                          <button class="dropbtn" id="palestinianinstitutionsbutton" onclick="palestinianInstitutions()" value="مؤسسات فلسطينية">
+                            مؤسسات فلسطينية
+                          </button>
+                          <button class="dropbtn" id="palestiniancitiesbutton" onclick="palestinianCities()" value="مدن فلسطينية">
+                          مدن فلسطينية
+                           </button>
+                          <button class="dropbtn"id="localitiesbutton" onclick="localities()" value="محليات">
+                          محليات
+                          </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="sport.html">رياضة</a></button>
+                        <div class="dropdown-content">
+                          <button class="dropbtn" id="worldchampionshipsbutton" onclick="worldChampionships()" value="بطولات عالمية">
+                          بطولات عالمية
+                          </button>
+                          <button class="dropbtn" id="localchampionshipsbutton" onclick="localChampionships()" value="بطولات محلية">
+                          بطولات محلية
+                          </button>
+                          <button class="dropbtn" id="basketballbutton" onclick="basketBall()" value="كرة سلة">
+                          كرة سلة
+                          </button>
+                          <button class="dropbtn" id="footballbutton" onclick="footBall()" value="كرة قدم">
+                            كرة قدم
+                          </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn" class="dropbtn">
+                          <a href="cultureAndHeritage.html">ثقافة وتراث</a>
+                        </button>                        
+                        <div class="dropdown-content">
+                          <button class="dropbtn" id="religiousaffairsbutton" onclick="religiousAffairs()" value="شؤون دينية">
+                          شؤون دينية
+                          </button>
+                          <button class="dropbtn" id="exhibitionsbutton" onclick="exhibitions()" value="معارض">
+                            معارض
+                          </button>
+                          <button class="dropbtn" id="occasionsbutton" onclick="occasions()" value="مناسبات">
+                            مناسبات
+                          </button>
+                          
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="israeliViolations.html">انتهاكات اسرائيلية</a>
+                        </button>
+                        
+                        <div class="dropdown-content">
+                          <button class="dropbtn" id="closurebutton" onclick="closure()" value="اغلاقات">
+                            اغلاقات
+                          </button>
+                          <button class="dropbtn" id="warsbutton" onclick="wars()" value="حروب">
+                            حروب
+                          </button>
+                          <button class="dropbtn" id="confrontationsbutton" onclick="confrontations()" value="مواجهات">
+                            مواجهات
+                          </button>
+                          <button class="dropbtn" id="funeralsbutton" onclick="funerals()" value="جنازات"> 
+                            جنازات
+                          </button>
+                          <button class="dropbtn" id="invasionsbutton" onclick="invasions()" value="اجتياحات">
+                            اجتياحات
+                          </button>
+                          <button class="dropbtn" id="settelmentbutton" onclick="settelment()" value="استيطان">
+                            استيطان 
+                          </button>
+                          <button class="dropbtn" id="housesdemolishedbutton" onclick="housesDemolished()" value="هدم منازل">
+                            هدم منازل
+                          </button>
+                          <button class="dropbtn" id="arrestsbutton" onclick="arrests()" value="اعتقالات">
+                            اعتقالات
+                          </button>
+                          <button class="dropbtn" id="wallbutton" onclick="wall()" value="الجدار">
+                            الجدار
+                          </button>
+                          <button class="dropbtn" id="seconduprisingbutton" onclick="secondUprising()" value="الانتفاضة الثانية">
+                            الانتفاضة الثانية
+                          </button>
+                          <button class="dropbtn" id="firstuprisingbutton" onclick="firstUprising()" value="الانتفاضة الاولى">
+                            الانتفاضة الاولى
+                          </button>
+                          <button class="dropbtn" id="israelimassacresbutton" onclick="israeliMassacres()" value="مجازر اسرائيلية">
+                            مجازر اسرائيلية
+                          </button>
+                          
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="picturedStories.html">قصص مصورة</a>
+                        </button>
+                        <a href="picturedStories.html"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="activities.html">نشاطات</a>
+                        </button>
+                        <a href="activities.html"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="palestineMartyrs.html">مجلس الوزراء</a>
+                        </button>                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="presidency.html">الرئاسة</a> 
+                        </button>
+                                               
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                          <a href="index.html">الرئيسية</a>
+                        </button>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="separator">
+      <a href="presidency.html">
+        <span id="pageName">
+        
+        </span>
+      </a>
+      <a href="presidency.html" >
+        <img style="width: 10px; height: 10px;" src="image/double left arrows.png" alt="الرئاسة">
+      </a>
+    </div>
+    <div class="section">
+        <span id="sectionspan" style="color: rgb(56, 55, 54); text-decoration-thickness: 4px; font-size: x-large;">
+
+        </span>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr1imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr2imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr3imgpres.JPG" alt="">
+          </a>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr4imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr5imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+        <div class="col-sm">
+          <a href="">
+            <img src="image/tr6imgpres.JPG" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function prisonerAffairs(){
+      let sectionSpan = document.getElementById("prisoneraffairsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;      
+      }
+      function womanAffairs(){
+        let sectionSpan = document.getElementById("womanaffairsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function dignitaries(){
+        let sectionSpan = document.getElementById("dignitariesbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function specialPictures(){
+        let sectionSpan = document.getElementById("specialpicturesbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function palestinianInstitutions(){
+        let sectionSpan = document.getElementById("palestinianinstitutionsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function palestinianCities(){
+        let sectionSpan = document.getElementById("palestiniancitiesbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function localities(){
+        let sectionSpan = document.getElementById("localitiesbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function worldChampionships(){
+        let sectionSpan = document.getElementById("worldchampionshipsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function localChampionships(){
+        let sectionSpan = document.getElementById("localchampionshipsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function footBall(){
+        let sectionSpan = document.getElementById("footballsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function basketBall(){
+        let sectionSpan = document.getElementById("basketballbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function religiousAffairs(){
+        let sectionSpan = document.getElementById("religiousaffairsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function exhibitions(){
+        let sectionSpan = document.getElementById("exhibitionsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function occasions(){
+        let sectionSpan = document.getElementById("occasionsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function confrontations(){
+        let sectionSpan = document.getElementById("confrontationsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function wars(){
+        let sectionSpan = document.getElementById("warsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function funerals(){
+        let sectionSpan = document.getElementById("funeralsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function settelment(){
+        let sectionSpan = document.getElementById("settelmentbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function firstUprising(){
+        let sectionSpan = document.getElementById("firstuprisingbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function secondUprising(){
+        let sectionSpan = document.getElementById("seconduprisingbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function israeliMassacres(){
+        let sectionSpan = document.getElementById("israelimassacresbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function wall(){
+        let sectionSpan = document.getElementById("wallbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function housesDemolished(){
+        let sectionSpan = document.getElementById("housesdemolishedbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function invasions(){
+        let sectionSpan = document.getElementById("invasionsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function arrests(){
+        let sectionSpan = document.getElementById("arrestsbutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      function closure(){
+        let sectionSpan = document.getElementById("closurebutton").value;
+      document.getElementById("sectionspan").innerHTML=sectionSpan;
+      }
+      </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
