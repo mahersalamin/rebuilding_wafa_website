@@ -7,11 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+ 
     <style>
         *{
           box-sizing: border-box;
+          max-width: 100%;
+          
         }
+        a{
+          color: black;
+        }
+        a:hover{ color: blanchedalmond;}
         .header{
             width: 100%;
 
@@ -36,16 +43,23 @@
         .more-links a{
             text-decoration-color: greenyellow;
         }
+        .logo{
+          width: 100%;
+        }
+        .logo img{
+          width: 100%;
+          overflow-x: hidden !important;
+        }
         .category{
             margin-left: 5%;
             margin-right: 7%;
         }
         .dropbtn {
-  background-color: white;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+          background-color: white;
+          color: black;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
 }
 
 .dropdown {
@@ -99,7 +113,9 @@
     
     
     </style>
-    <title>الرئاسة</title>
+    <title>
+      التصنيفات
+    </title>
   </head>
   <body>
     <div class="header">
@@ -129,13 +145,12 @@
                         <a class="nav-link" href="http://www.wafa.ps/">الصفحة الرئيسية</a>
                     </li>
                 </ul>
-            </div>
-            
+            </div>   
         </div>
 
         <div class="logo">
             <a href="index.html">
-                <img style="margin-left: 5%;" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
+                <img src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
             </a>
         </div>
         
@@ -145,7 +160,7 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="more.html">المزيد</a>
+                          <a href="category.html">المزيد</a>
                         </button>                        
                         <div class="dropdown-content">
                           <button class="dropbtn" id="prisoneraffairsbutton" onclick="prisonerAffairs()" value="شؤون الأسرى"> 
@@ -174,7 +189,7 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <button class="dropbtn"><a href="sport.html">رياضة</a></button>
+                        <button class="dropbtn"><a href="category.html">رياضة</a></button>
                         <div class="dropdown-content">
                           <button class="dropbtn" id="worldchampionshipsbutton" onclick="worldChampionships()" value="بطولات عالمية">
                           بطولات عالمية
@@ -194,7 +209,7 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn" class="dropbtn">
-                          <a href="cultureAndHeritage.html">ثقافة وتراث</a>
+                          <a href="category.html">ثقافة وتراث</a>
                         </button>                        
                         <div class="dropdown-content">
                           <button class="dropbtn" id="religiousaffairsbutton" onclick="religiousAffairs()" value="شؤون دينية">
@@ -213,7 +228,7 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="israeliViolations.html">انتهاكات اسرائيلية</a>
+                          <a href="category.html">انتهاكات اسرائيلية</a>
                         </button>
                         
                         <div class="dropdown-content">
@@ -261,26 +276,28 @@
                     
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="picturedStories.html">قصص مصورة</a>
+                          <button class="dropbtn" id="picturedstoriesbutton" onclick="picturedStories()" value="قصص مصورة">
+                            قصص مصورة
+                          </button>
                         </button>
-                        <a href="picturedStories.html"></a>
+                        <a href="category.html"></a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="activities.html">نشاطات</a>
+                          <a href="category.html">نشاطات</a>
                         </button>
-                        <a href="activities.html"></a>
+                        <a href="category.html"></a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                          <a href="category.html">شهداء فلسطين</a>
                         </button>
                         <div class="dropdown-content">
-                          <a href="palestineMartyrs.html">شهداء فلسطين</a>
+                          <a href="category.html">شهداء فلسطين</a>
                         </div>
                         
                     </div>
@@ -288,14 +305,14 @@
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="palestineMartyrs.html">مجلس الوزراء</a>
+                          <a href="category.html">مجلس الوزراء</a>
                         </button>                        
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="dropbtn">
-                          <a href="presidency.html">الرئاسة</a> 
+                          <a href="category.html">الرئاسة</a> 
                         </button>
                                                
                     </div>
@@ -314,12 +331,12 @@
     </div>
 
     <div class="separator">
-      <a href="presidency.html">
+      <a href="category.html">
         <span id="pageName">
         
         </span>
       </a>
-      <a href="presidency.html" >
+      <a href="category.html" >
         <img style="width: 10px; height: 10px;" src="image/double left arrows.png" alt="الرئاسة">
       </a>
     </div>
@@ -329,7 +346,7 @@
         </span>
     </div>
     <div class="container">
-      <div class="row">
+      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
         <div class="col-md">
           <a href="">
             <img src="image/tr1imgpres.JPG" alt="">
@@ -346,8 +363,7 @@
           </a>
         </div>
       </div>
-      <br>
-      <div class="row">
+      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
         <div class="col-md">
           <a href="">
             <img src="image/tr4imgpres.JPG" alt="">
@@ -364,7 +380,7 @@
           </a>
         </div>
       </div>
-      <div class="row">
+      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
         <div class="col-md">
           <a href="">
             <img src="image/tr6imgpres.JPG" alt="">
@@ -381,7 +397,7 @@
           </a>
         </div>
       </div>
-      <div class="row">
+      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
         <div class="col-sm">
           <a href="">
             <img src="image/tr6imgpres.JPG" alt="">
