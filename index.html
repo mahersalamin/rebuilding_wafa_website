@@ -19,20 +19,25 @@
           margin: 0;
           padding: 0;
         }
+        body{
+          background-color: #ECECEC;
+        }
         a{
           color: black;
         }
         a:hover{ color: blanchedalmond;}
+
         .header{
           max-width: 100%;
-           
-          width: 100%;
-
+          background-color: white;
         }
         .header-content{
             overflow: hidden;
             margin-bottom: 1%;
             background-color: brown;
+        }
+        #divs-bg{
+          background-color: #ccc;
         }
         .daily-info{
             width: 48%;
@@ -47,6 +52,15 @@
         }
         .more-links a{
             text-decoration-color: greenyellow;
+        }
+        .logo{
+          display: grid;
+          height: 100%;
+        }
+        .logo-img{
+          margin-left: 5%;
+          max-width: 100%;
+          max-height: 100vh;
         }
         .category{
             margin-left: 5%;
@@ -111,28 +125,40 @@
     opacity: 0.7;
 }
       .bxcontainer{
-        width: 600px;
+        width: 76%;
         margin: 0 auto;
+        margin-top: 1%;
+        border-radius: 0.5px;
+      }
+      .bxslider-imgs{
+        padding: 2px;
+        width: 250px;
+        margin: 0;
       }
         .three-content{
-          width: 90%;
-          height:350px;
-          margin-top: 2%;
+          width: 100%;
           margin: 0 auto;	
           display: inline-flex; 
+          justify-content: center;
         }
         .wafa-category-word{
           width: 100%;
-          padding-left: 92%;
+          padding-left: 90%;
         }
         .wafa-category-word span{
           text-align: right;
-
         }
         .wafa-categories{
           display: inline-flex;
+          width: 100%;
+          direction: rtl;
+          justify-content: center;
         }
-        
+        .wafa-categories-divs{
+          max-width: 25%;
+          max-height: 70%;
+          margin: 15px;
+        }
         .footer {
             position:static;
             left: 0;
@@ -175,15 +201,14 @@
   </head>
   <body>
     <div class="header">
-        <div class="header-content">
-            <div class="daily-info">
-                <nav style="width: fit-content;" class="nav">
-                    <a style="color: blanchedalmond;" class="nav-link" href="#">الخميس , 25 حزيران 2020</a>
-                    <a style="color: blanchedalmond;"class="nav-link" href="#">حالة الطقس</a>
-                    
-                </nav>
-            </div>
-            <div class="more-links">
+      <div class="header-content">
+        <div class="daily-info">
+          <nav style="width: fit-content;" class="nav">
+            <a style="color: blanchedalmond;" class="nav-link" href="#">الخميس , 2 تموز 2020</a>
+            <a style="color: blanchedalmond;"class="nav-link" href="#">حالة الطقس</a>
+          </nav>
+          </div>
+        <div class="more-links">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                       <a style="color: blanchedalmond;" class="nav-link" href="http://french.wafa.ps/">Français</a>
@@ -201,18 +226,16 @@
                         <a style="color: blanchedalmond;" class="nav-link" href="http://www.wafa.ps/">الصفحة الرئيسية</a>
                     </li>
                 </ul>
-            </div>
-            
         </div>
+      </div>
 
-        <div class="logo">
-            <a href="index.html">
-                <img style="margin-left: 5%;" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
-            </a>
-        </div>
-        
+      <div class="logo">
+        <a href="index.html">
+          <img class="logo-img" src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
+        </a>
+      </div>
 
-        <div class="category ">
+      <div class="category ">
             <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
                 <li class="nav-item">
                     <div class="dropdown">
@@ -327,7 +350,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+      </div>
 
     </div>
     
@@ -425,24 +448,43 @@
           </div>
     </div> 
     
-    <div class="bxcontainer">
+    <div class="bxcontainer" id="divs-bg">
        <ul class="bslider">
           <li>
-           <img src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           
           </li>
           <li>
-            <img src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs"" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            
           </li>
           <li>
-            <img src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           
           </li>
           <li>
-            <img src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+            
           </li>
           <li>
-             <img src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           <img class="bxslider-imgs" src="image/pictured story.JPG" alt="">
+           
           </li>
-          
        </ul>
     </div>
     <script src="js/jquery.js"></script>
@@ -450,86 +492,87 @@
     <script>
       $('.bslider').bxSlider();
     </script>
-    <div class="three-content">         
-      <div class="card" style="width: 300px; height: 100%; margin: 15px;">
-        <div class="card-body"style="height: 90%;background-color:rgb(136, 132, 132) ;">
+
+    <div class="three-content" id="divs-bg">         
+      <div class="card" style="max-width: 33%; max-height: 70%; margin: 15px;">
+        <div class="card-body" style="height: 70px; background-color:rgb(136, 132, 132) ;">
           <p class="card-text" style="text-align: right; color: white;">قصة مصورة</p>
         </div>
-        <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
+        <div style="padding: 3%; background-color:rgb(136, 132, 132) ; height: 200px;">
           <a href="http://images.wafa.ps/category.aspx?catid=262">
-            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
       </div>               
-      <div class="card" style="width: 300px; height: 100%; margin: 15px; background-color:rgb(136, 132, 132) ;">
-        <div class="card-body"style="height: 90%;">
+      <div class="card" style="max-width: 33%; max-height: 70%; margin: 15px; background-color:rgb(136, 132, 132) ;">
+        <div class="card-body"style="max-height: 90%;">
           <p class="card-text" style="text-align: right; color: white;">حدث في مثل هذا اليوم</p>
         </div>
-        <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
+        <div style="padding: 3%; background-color:rgb(136, 132, 132) ; height: 200px;">
           <a href="http://images.wafa.ps/event.aspx">
-            <img src="image/at this day.jpg" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/at this day.jpg" class="card-img-top" alt="...">
           </a>
         </div>                                                            
       </div>
-      <div class="card" style="width: 300px ;height: 100%; margin: 15px;background-color:rgb(136, 132, 132) ;">
+      <div class="card" style="max-width: 33%; max-height: 70%; margin: 15px; background-color:rgb(136, 132, 132) ;">
         <div class="card-body" style="height: 90%;">
           <p class="card-text" style="text-align: right; color: white;">عين على فلسطين</p>
         </div>    
-        <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
+        <div style="padding: 3%; background-color:rgb(1max-36, 132, 132) ; height: 200px;">
           <a href="http://images.wafa.ps/bigphoto/imagesfolder/42_51_14_31_5_20204.jpeg">
-            <img src="image/eyeOnPalestine.jpeg" class="card-img-top" alt="عين على فلسطين">
+            <img style="width: 100%; height: 100%;" src="image/eyeOnPalestine.jpeg" class="card-img-top" alt="عين على فلسطين">
           </a>
         </div>                                                        
       </div>  
     </div>
-            
-    <div class="wafa-category-word">
+     
+    <div class="wafa-category-word" id="divs-bg">
             <span>تصنيفات وفا</span>
     </div>
-    <div class="wafa-categories">
-      <div class="card" style="width: 300px; height: 100%; margin: 15px;">
-        <div class="card-body"style="height: 90%;background-color:rgb(136, 132, 132) ;">
+
+    <div class="wafa-categories" id="divs-bg">
+      <div class="card  wafa-categories-divs">
+        <div class="card-body"style="height: 90%; background-color:rgb(136, 132, 132) ;">
           <p class="card-text" style="text-align: right; color: white;">مدن فلسطينية</p>
         </div>
-        <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
+        <div style="padding: 3%; background-color:rgb(136, 132, 132);">
           <a href="http://images.wafa.ps/category.aspx?catid=262">
-            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
       </div>
-      <div class="card" style="width: 290px; height: 96%; margin: 15px;">
+      <div class="card wafa-categories-divs">
         <div class="card-body"style="height: 90%;background-color:rgb(136, 132, 132) ;">
           <p class="card-text" style="text-align: right; color: white;">رياضة</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
           <a href="http://images.wafa.ps/category.aspx?catid=262">
-            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
       </div>
-      <div class="card" style="width: 290px; height: 96%; margin: 15px;">
-        <div class="card-body"style="height: 90%;background-color:rgb(136, 132, 132) ;">
+      <div class="card wafa-categories-divs">
+        <div class="card-body"style="height: 90%; background-color:rgb(136, 132, 132);">
           <p class="card-text" style="text-align: right; color: white;">ثقافة وتراث</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
           <a href="http://images.wafa.ps/category.aspx?catid=262">
-            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
       </div>
-      <div class="card" style="width: 290px; height: 96%; margin: 15px;">
+      <div class="card wafa-categories-divs">
         <div class="card-body"style="height: 90%;background-color:rgb(136, 132, 132) ;">
           <p class="card-text" style="text-align: right; color: white;">الرئاسة</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
           <a href="http://images.wafa.ps/category.aspx?catid=262">
-            <img src="image/pictured story.JPG" class="card-img-top" alt="...">
+            <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
       </div>
     
     </div>
-        
       
   <div class="footer">
         <div class="wafa-links">
