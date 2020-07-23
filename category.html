@@ -7,110 +7,147 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    
  
     <style>
-        *{
-          box-sizing: border-box;
-          max-width: 100%;
-          
-        }
-        a{
-          color: black;
-        }
-        a:hover{ color: blanchedalmond;}
-        .header{
-          max-width: 100%;
-          background-color: white;
-        }
-        .header-content{
-            overflow: hidden;
-            margin-bottom: 1%;
-            background-color: brown;
-        }
-        .daily-info{
-            width: 48%;
-            margin: 0;
-            float: left;
-            
-        }
-        .more-links{
-            width: 48%;
-            margin: 0;
-            float: right;
-            
-        }
-        .more-links a{
-            text-decoration-color: greenyellow;
-        }
-        .logo{
-          height: 100%;
-        }
-        .logo-img{
-          margin-left: 5%;
-          max-width: 100%;
-        }
-        .category{
-          margin-left: 5%;
-          margin-right: 7%;
-        }
-        .dropbtn {
-          background-color: white;
-          color: black;
-          padding: 16px;
-          font-size: 16px;
-          border: none;
-}
+    *{
+      box-sizing: border-box;
+      max-width: 100%; 
+    }
+    a{
+      color: black;
+    }
+    a:hover{ color: blanchedalmond;}
+    .header{
+      max-width: 100%;
+      background-color: white;
+    }
+    .header-content{
+        overflow: hidden;
+        margin-bottom: 1%;
+        background-color: brown;
+    }
+    .daily-info{
+        width: 48%;
+        margin: 0;
+        float: left;
+        
+    }
+    .more-links{
+        width: 48%;
+        margin: 0;
+        float: right;
+        
+    }
+    .more-links a{
+        text-decoration-color: greenyellow;
+    }
+    .logo{
+      height: 100%;
+    }
+    .logo-img{
+      margin-left: 5%;
+      max-width: 100%;
+    }
+    .category{
+      margin-left: 5%;
+      margin-right: 7%;
+    }
+    .dropbtn {
+      background-color: white;
+      color: black;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+  }
 
-.dropdown {
+  .dropdown {
   position: relative;
   display: inline-block;
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
   display: none;
   position: absolute;
   background-color: #303e45 !important;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
+  }
 
-.dropdown-content a {
+  .dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
+  }
 
-.dropdown:hover .dropbtn {color: white;}
+  .dropdown:hover .dropbtn {color: white;}
 
-.dropdown:hover .dropdown-content {display:block;}
 
-.dropdown:hover .dropbtn {background-color: #303e45;}
+  
+  .dropdown:hover .dropdown-content {display:grid;}
 
-.separator{
-      width: 100%;
-      border-top: black 1px solid;
-      margin-top: 2%;
-      margin-bottom: 3%;
-    }
-    .separator a{
-      float: right;
-      color: black;
-      margin-right: 7%;
-      margin-top: 1%;      
-    }
-    .section{
-      margin-right: 7%;
-      margin-left: 5%;
-      height: 50px;
-      background-color: rgb(204, 199, 199);
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-    
+  .dropdown:hover .dropbtn {background-color: #303e45;}
+
+  .separator{
+  width: 100%;
+  border-top: black 1px solid;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  }
+  .separator a{
+  float: right;
+  color: black;
+  margin-right: 7%;
+  margin-top: 1%;      
+  }
+  .section{
+  margin-right: 7%;
+  margin-left: 5%;
+  height: 50px;
+  background-color: rgb(204, 199, 199);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  }
+  .footer {
+            position:static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            background-color: #23323F;
+            margin-top: 2%;
+            text-align: center;
+        }
+        .wafa-links{
+            width: 50%;
+            direction: rtl;
+            position: absolute;
+            margin-left: 2%;
+            float: left;
+        }
+        .wafa-links a{
+          color: blanchedalmond;
+          margin: 2%;
+        }
+        .wafa-links span{
+          color: blanchedalmond;
+          margin: 2%;
+        }
+        .wafa{
+          position: static;
+            width: 48%;
+            
+            margin-left: 3%;
+            margin-bottom:0;
+            margin-top: 0;
+            float: right;
+        }
+        .wafa p{
+          color: blanchedalmond;
+        }
     
     </style>
     <title>
@@ -118,14 +155,14 @@
     </title>
   </head>
   <body>
-    <div class="header">
+  <div class="header">
       <div class="header-content">
         <div class="daily-info">
           <nav style="width: fit-content;" class="nav">
             <a style="color: blanchedalmond;" class="nav-link" href="#">الخميس , 2 تموز 2020</a>
             <a style="color: blanchedalmond;"class="nav-link" href="#">حالة الطقس</a>
-          </nav>
-          </div>
+        </nav>
+      </div>
         <div class="more-links">
           <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -145,269 +182,278 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="logo">
+    </div>
+    <div class="logo">
         <a href="index.html">
           <img class="logo-img"  src="image\WAFApdf2.gif" alt="وكالة الأنباء والمعلومات الفلسطينية">
         </a>
-      </div>
-      <div class="category ">
-        <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="dropbtn">
-                <a href="category.html">المزيد</a>
-              </button>                        
-              <div class="dropdown-content">
-                <button class="dropbtn" id="prisoneraffairsbutton" onclick="prisonerAffairs()" value="شؤون الأسرى"> 
-                  شؤون الأسرى
-                </button>
-                <button class="dropbtn" id="womanaffairsbutton" onclick="womanAffairs()" value="شؤون المرأة ">
-                            شؤون المرأة
-                </button>
-                <button class="dropbtn" id="dignitariesbutton" onclick="dignitaries()" value="شخصيات">
-                            شخصيات
-                </button>
-                <button class="dropbtn" id="specialpicturesbutton" onclick="specialPictures()" value="صور مميزة">
-                            صور مميزة
-                </button>
-                <button class="dropbtn" id="palestinianinstitutionsbutton" onclick="palestinianInstitutions()" value="مؤسسات فلسطينية">
-                            مؤسسات فلسطينية
-                </button>
-                <button class="dropbtn" id="palestiniancitiesbutton" onclick="palestinianCities()" value="مدن فلسطينية">
-                 مدن فلسطينية
-                </button>
-                <button class="dropbtn"id="localitiesbutton" onclick="localities()" value="محليات">
-                          محليات
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="dropbtn"><a href="category.html">رياضة</a></button>
-              <div class="dropdown-content">
-                <button class="dropbtn" id="worldchampionshipsbutton" onclick="worldChampionships()" value="بطولات عالمية">
-                          بطولات عالمية
-                </button>
-                <button class="dropbtn" id="localchampionshipsbutton" onclick="localChampionships()" value="بطولات محلية">
-                  بطولات محلية
-                </button>
-                <button class="dropbtn" id="basketballbutton" onclick="basketBall()" value="كرة سلة">
-                  كرة سلة
-                </button>
-                <button class="dropbtn" id="footballbutton" onclick="footBall()" value="كرة قدم">
-                  كرة قدم
-                </button>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="dropbtn" class="dropbtn">
-                <a href="category.html">ثقافة وتراث</a>
-              </button>                        
-              <div class="dropdown-content">
-                <button class="dropbtn" id="religiousaffairsbutton" onclick="religiousAffairs()" value="شؤون دينية">
-                  شؤون دينية
-                </button>
-                <button class="dropbtn" id="exhibitionsbutton" onclick="exhibitions()" value="معارض">
-                  معارض
-                </button>
-                <button class="dropbtn" id="occasionsbutton" onclick="occasions()" value="مناسبات">
-                  مناسبات
-                </button>         
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="dropbtn">
-                <a href="category.html">انتهاكات اسرائيلية</a>
-              </button> 
-              <div class="dropdown-content">
-                <button class="dropbtn" id="closurebutton" onclick="closure()" value="اغلاقات">
-                  اغلاقات
-                </button>
-                <button class="dropbtn" id="warsbutton" onclick="wars()" value="حروب">
-                  حروب
-                </button>
-                <button class="dropbtn" id="confrontationsbutton" onclick="confrontations()" value="مواجهات">
-                  مواجهات
-                </button>
-                <button class="dropbtn" id="funeralsbutton" onclick="funerals()" value="جنازات"> 
-                            جنازات
-                </button>
-                <button class="dropbtn" id="invasionsbutton" onclick="invasions()" value="اجتياحات">
-                            اجتياحات
-                </button>
-                <button class="dropbtn" id="settelmentbutton" onclick="settelment()" value="استيطان">
-                            استيطان 
-                </button>
-                <button class="dropbtn" id="housesdemolishedbutton" onclick="housesDemolished()" value="هدم منازل">
-                            هدم منازل
-                </button>
-                <button class="dropbtn" id="arrestsbutton" onclick="arrests()" value="اعتقالات">
-                            اعتقالات
-                </button>
-                <button class="dropbtn" id="wallbutton" onclick="wall()" value="الجدار">
-                            الجدار
-                </button>
-                <button class="dropbtn" id="seconduprisingbutton" onclick="secondUprising()" value="الانتفاضة الثانية">
-                            الانتفاضة الثانية
-                </button>
-                <button class="dropbtn" id="firstuprisingbutton" onclick="firstUprising()" value="الانتفاضة الاولى">
-                            الانتفاضة الاولى
-                </button>
-                <button class="dropbtn" id="israelimassacresbutton" onclick="israeliMassacres()" value="مجازر اسرائيلية">
-                            مجازر اسرائيلية
-                </button>
-              </div>
-            </div>
-          </li>
-                <li class="nav-item">
-                    
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <button class="dropbtn" id="picturedstoriesbutton" onclick="picturedStories()" value="قصص مصورة">
-                            قصص مصورة
-                          </button>
-                        </button>
-                        <a href="category.html"></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">نشاطات</a>
-                        </button>
-                        <a href="category.html"></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">شهداء فلسطين</a>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="category.html">شهداء فلسطين</a>
-                        </div>
-                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">مجلس الوزراء</a>
-                        </button>                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">الرئاسة</a> 
-                        </button>
-                                               
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="index.html">الرئيسية</a>
-                        </button>
-                        
-                    </div>
-                </li>
-            </ul>
-        </div>
-
     </div>
+    <div class="category ">
+      <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="category.html">المزيد</a>
+            </button>                        
+            <div class="dropdown-content">
+              <button class="dropbtn" id="prisoneraffairsbutton" onclick="prisonerAffairs()" value="شؤون الأسرى"> 
+                شؤون الأسرى
+              </button>
+              <button class="dropbtn" id="womanaffairsbutton" onclick="womanAffairs()" value="شؤون المرأة ">
+                          شؤون المرأة
+              </button>
+              <button class="dropbtn" id="dignitariesbutton" onclick="dignitaries()" value="شخصيات">
+                          شخصيات
+              </button>
+              <button class="dropbtn" id="specialpicturesbutton" onclick="specialPictures()" value="صور مميزة">
+                          صور مميزة
+              </button>
+              <button class="dropbtn" id="palestinianinstitutionsbutton" onclick="palestinianInstitutions()" value="مؤسسات فلسطينية">
+                مؤسسات فلسطينية
+              </button>
+              <button class="dropbtn" id="palestiniancitiesbutton" onclick="palestinianCities()" value="مدن فلسطينية">
+                مدن فلسطينية
+              </button>
+              <button class="dropbtn"id="localitiesbutton" onclick="localities()" value="محليات">
+                        محليات
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="category.html">رياضة</a>
+            </button>
+            <div class="dropdown-content">
+              <button class="dropbtn" id="worldchampionshipsbutton" onclick="worldChampionships()" value="بطولات عالمية">
+                        بطولات عالمية
+              </button>
+              <button class="dropbtn" id="localchampionshipsbutton" onclick="localChampionships()" value="بطولات محلية">
+                بطولات محلية
+              </button>
+              <button class="dropbtn" id="basketballbutton" onclick="basketBall()" value="كرة سلة">
+                كرة سلة
+              </button>
+              <button class="dropbtn" id="footballbutton" onclick="footBall()" value="كرة قدم">
+                كرة قدم
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn" class="dropbtn">
+              <a href="category.html">ثقافة وتراث</a>
+            </button>                        
+            <div class="dropdown-content">
+              <button class="dropbtn" id="religiousaffairsbutton" onclick="religiousAffairs()" value="شؤون دينية">
+                شؤون دينية
+              </button>
+              <button class="dropbtn" id="exhibitionsbutton" onclick="exhibitions()" value="معارض">
+                معارض
+              </button>
+              <button class="dropbtn" id="occasionsbutton" onclick="occasions()" value="مناسبات">
+                مناسبات
+              </button>         
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="category.html">انتهاكات اسرائيلية</a>
+            </button> 
+            <div class="dropdown-content">
+              <button class="dropbtn" id="closurebutton" onclick="closure()" value="اغلاقات">
+                اغلاقات
+              </button>
+              <button class="dropbtn" id="warsbutton" onclick="wars()" value="حروب">
+                حروب
+              </button>
+              <button class="dropbtn" id="confrontationsbutton" onclick="confrontations()" value="مواجهات">
+                مواجهات
+              </button>
+              <button class="dropbtn" id="funeralsbutton" onclick="funerals()" value="جنازات"> 
+                          جنازات
+              </button>
+              <button class="dropbtn" id="invasionsbutton" onclick="invasions()" value="اجتياحات">
+                          اجتياحات
+              </button>
+              <button class="dropbtn" id="settelmentbutton" onclick="settelment()" value="استيطان">
+                          استيطان 
+              </button>
+              <button class="dropbtn" id="housesdemolishedbutton" onclick="housesDemolished()" value="هدم منازل">
+                          هدم منازل
+              </button>
+              <button class="dropbtn" id="arrestsbutton" onclick="arrests()" value="اعتقالات">
+                          اعتقالات
+              </button>
+              <button class="dropbtn" id="wallbutton" onclick="wall()" value="الجدار">
+                          الجدار
+              </button>
+              <button class="dropbtn" id="seconduprisingbutton" onclick="secondUprising()" value="الانتفاضة الثانية">
+                          الانتفاضة الثانية
+              </button>
+              <button class="dropbtn" id="firstuprisingbutton" onclick="firstUprising()" value="الانتفاضة الاولى">
+                          الانتفاضة الاولى
+              </button>
+              <button class="dropbtn" id="israelimassacresbutton" onclick="israeliMassacres()" value="مجازر اسرائيلية">
+                          مجازر اسرائيلية
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn" id="picturedstoriesbutton" onclick="picturedStories()" value="قصص مصورة">
+              قصص مصورة
+            </button>
+            <a href="category.html"></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <button class="dropbtn">
+                <a href="category.html">نشاطات</a>
+              </button>
+              <a href="category.html"></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="category.html">شهداء فلسطين</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="category.html">شهداء فلسطين</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <button class="dropbtn">
+                <a href="category.html">مجلس الوزراء</a>
+              </button>                        
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <button class="dropbtn">
+                <a href="category.html">الرئاسة</a> 
+              </button>                         
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <button class="dropbtn">
+                <a href="index.html">الرئيسية</a>
+              </button>      
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="separator">
-      <a href="category.html">
-        <span id="pageName">
+  <div class="separator">
+    <a href="category.html">
+      <span id="pageName">
+      
+      </span>
+    </a>
+    <a href="category.html" >
+      <img style="width: 10px; height: 10px;" src="image/double left arrows.png" alt="الرئاسة">
+    </a>
+  </div>
+  <div class="section">
+    <span id="sectionspan" style="color: rgb(56, 55, 54); text-decoration-thickness: 4px; font-size: x-large;">
+
+    </span>
+  </div>
+  <div class="container">
+    <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr1imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr2imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr3imgpres.JPG" alt="">
+        </a>
+      </div>
+    </div>
+    <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr4imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr5imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+    </div>
+    <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
+      <div class="col-md">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+    </div>
+    <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
+      <div class="col-sm">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="album.html">
+          <img src="image/tr6imgpres.JPG" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wafa-links">
+
+      <span>عدد الزوار 3698525</span>
+      <a href="http://images.wafa.ps/search.aspx">بحث متقدم</a>
+      <a href="http://images.wafa.ps/atemplate.aspx?id=3">اتصل بنا</a>
+      <a href="http://images.wafa.ps/atemplate.aspx?id=4">من نحن</a>
+      <a href="http://images.wafa.ps/index.html">الرئيسية</a>
         
-        </span>
-      </a>
-      <a href="category.html" >
-        <img style="width: 10px; height: 10px;" src="image/double left arrows.png" alt="الرئاسة">
-      </a>
     </div>
-    <div class="section">
-        <span id="sectionspan" style="color: rgb(56, 55, 54); text-decoration-thickness: 4px; font-size: x-large;">
-
-        </span>
+    <div class="wafa">
+        <p>جميع الحقوق محفوظة لوكالة الأنباء والمعلومات الفلسطينية وفا © 2020</p>
     </div>
-    <div class="container">
-      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr1imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr2imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr3imgpres.JPG" alt="">
-          </a>
-        </div>
-      </div>
-      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr4imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr5imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-      </div>
-      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
-        <div class="col-md">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-sm">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-sm">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-      </div>
-      <div style="margin-top: 10px; margin-bottom: 10px;" class="row">
-        <div class="col-sm">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-sm">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-        <div class="col-sm">
-          <a href="">
-            <img src="image/tr6imgpres.JPG" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
+</div>
     
     <script>
       function prisonerAffairs(){
@@ -514,7 +560,7 @@
         let sectionSpan = document.getElementById("closurebutton").value;
       document.getElementById("sectionspan").innerHTML=sectionSpan;
       }
-      </script>
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
