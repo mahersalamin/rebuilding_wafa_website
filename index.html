@@ -14,85 +14,85 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
-       *{
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        body{
-          background-color: #ECECEC;
-        }
-        a{
-          color: black;
-        }
-        a:hover{ color: blanchedalmond;}
+      *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #ECECEC;
+  }
+  a{
+    color: black;
+  }
+  a:hover{ color: blanchedalmond;}
 
-        .header{
-          max-width: 100%;
-          background-color: white;
-        }
-        .header-content{
-            overflow: hidden;
-            margin-bottom: 1%;
-            background-color: brown;
-        }
-        #divs-bg{
-          background-color: #ccc;
-        }
-        .daily-info{
-            width: 48%;
-            margin: 0;
-            float: left; 
-        }
-        .more-links{
-            width: 48%;
-            margin: 0;
-            float: right;
-            
-        }
-        .more-links a{
-            text-decoration-color: greenyellow;
-        }
-        .logo{
-          display: grid;
-          height: 100%;
-        }
-        .logo-img{
-          margin-left: 5%;
-          max-width: 100%;
-          max-height: 100vh;
-        }
-        .category{
-            margin-left: 5%;
-            margin-right: 7%;
-        }
-        .dropbtn {
-  background-color: white;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  .header{
+    max-width: 100%;
+    background-color: white;
+  }
+  .header-content{
+      overflow: hidden;
+      margin-bottom: 1%;
+      background-color: brown;
+  }
+  #divs-bg{
+    background-color: #ccc;
+  }
+  .daily-info{
+      width: 48%;
+      margin: 0;
+      float: left; 
+  }
+  .more-links{
+      width: 48%;
+      margin: 0;
+      float: right;
+      
+  }
+  .more-links a{
+      text-decoration-color: greenyellow;
+  }
+  .logo{
+    display: grid;
+    height: 100%;
+  }
+  .logo-img{
+    margin-left: 5%;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .category{
+      margin-left: 5%;
+      margin-right: 7%;
+  }
+  .dropbtn {
+background-color: white;
+color: black;
+padding: 16px;
+font-size: 16px;
+border: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #303e45 !important;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #303e45 !important;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 .dropdown:hover .dropbtn {color: white;}
@@ -101,101 +101,102 @@
 
 .dropdown:hover .dropbtn {background-color: #303e45;}
 
-  
-       
+
+ 
 #myCarousel .list-inline {
-    white-space:nowrap;
-    overflow-x:auto;
+white-space:nowrap;
+overflow-x:auto;
 }
 
 #myCarousel .carousel-indicators {
-    position: static;
-    left: initial;
-    width: initial;
-    margin-left: initial;
+position: static;
+left: initial;
+width: initial;
+margin-left: initial;
 }
 
 #myCarousel .carousel-indicators > li {
-    width: initial;
-    height: initial;
-    text-indent: initial;
+width: initial;
+height: initial;
+text-indent: initial;
 }
 
 #myCarousel .carousel-indicators > li.active img {
-    opacity: 0.7;
+opacity: 0.7;
 }
-      .bxcontainer{
-        width: 76%;
-        margin: 0 auto;
-        margin-top: 1%;
-        border-radius: 0.5px;
-      }
-      .bxslider-imgs{
-        padding: 2px;
-        width: 250px;
-        margin: 0;
-      }
-        .three-content{
-          width: 100%;
-          margin: 0 auto;	
-          display: inline-flex; 
-          justify-content: center;
-        }
-        .wafa-category-word{
-          width: 100%;
-          padding-left: 90%;
-        }
-        .wafa-category-word span{
-          text-align: right;
-        }
-        .wafa-categories{
-          display: inline-flex;
-          width: 100%;
-          direction: rtl;
-          justify-content: center;
-        }
-        .wafa-categories-divs{
-          max-width: 25%;
-          max-height: 70%;
-          margin: 15px;
-        }
-        .footer {
-            position:static;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 45px;
-            background-color: #23323F;
-            margin-top: 2%;
-            text-align: center;
-        }
-        .wafa-links{
-            width: 50%;
-            direction: rtl;
-            position: absolute;
-            margin-left: 2%;
-            float: left;
-        }
-        .wafa-links a{
-          color: blanchedalmond;
-          margin: 2%;
-        }
-        .wafa-links span{
-          color: blanchedalmond;
-          margin: 2%;
-        }
-        .wafa{
-          position: static;
-            width: 48%;
-            
-            margin-left: 3%;
-            margin-bottom:0;
-            margin-top: 0;
-            float: right;
-        }
-        .wafa p{
-          color: blanchedalmond;
-        }
+.bxcontainer{
+  width: 76%;
+  margin: 0 auto;
+  margin-top: 1%;
+  border-radius: 0.5px;
+}
+.bxslider-imgs{
+  padding: 2px;
+  width: 250px;
+  margin: 0;
+}
+  .three-content{
+    width: 100%;
+    margin: 0 auto;	
+    display: inline-flex; 
+    justify-content: center;
+  }
+  .wafa-category-word{
+    width: 100%;
+    padding-left: 90%;
+  }
+  .wafa-category-word span{
+    text-align: right;
+  }
+  .wafa-categories{
+    display: inline-flex;
+    width: 100%;
+    direction: rtl;
+    justify-content: center;
+  }
+  .wafa-categories-divs{
+    max-width: 25%;
+    max-height: 70%;
+    margin: 15px;
+    
+  }
+  .footer {
+      position:static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      background-color: #23323F;
+      margin-top: 2%;
+      text-align: center;
+  }
+  .wafa-links{
+      width: 50%;
+      direction: rtl;
+      position: absolute;
+      margin-left: 2%;
+      float: left;
+  }
+  .wafa-links a{
+    color: blanchedalmond;
+    margin: 2%;
+  }
+  .wafa-links span{
+    color: blanchedalmond;
+    margin: 2%;
+  }
+  .wafa{
+    position: static;
+      width: 48%;
+      
+      margin-left: 3%;
+      margin-bottom:0;
+      margin-top: 0;
+      float: right;
+  }
+  .wafa p{
+    color: blanchedalmond;
+  }
     </style>
     <title>wafa</title>
   </head>
@@ -236,120 +237,120 @@
       </div>
 
       <div class="category ">
-            <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">المزيد</a>
-                        </button>                        
-                        <div class="dropdown-content">
-                          <a href="category.html">شؤون الأسرى</a>
-                          <a href="category.html">شؤون المرأة</a>
-                          <a href="category.html">شخصيات</a>
-                          <a href="category.html">صور مميزة</a>
-                          <a href="category.html">مؤسسات فلسطينية</a>
-                          <a href="category.html">مدن فلسطينية</a>
-                          <a href="category.html">محليات</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn"><a href="category.html">رياضة</a></button>
-                        <div class="dropdown-content">
-                          <a href="category.html">بطولات عالمية</a>
-                          <a href="category.html">بطولات محلية</a>
-                          <a href="category.html">كرة سلة</a>
-                          <a href="category.html">كرة قدم</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">ثقافة وتراث</a>
-                        </button>                        
-                        <div class="dropdown-content">
-                          <a href="category.html">شؤون دينية</a>
-                          <a href="category.html">معارض</a>
-                          <a href="category.html">مناسبات</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">انتهاكات اسرائيلية</a>
-                        </button>
-                        
-                        <div class="dropdown-content">
-                          <a href="category.html">اغلاقات</a>
-                          <a href="category.html">حروب</a>
-                          <a href="category.html">مواجهات</a>
-                          <a href="category.html">جنازات</a>
-                          <a href="category.html">اجتياحات</a>
-                          <a href="category.html">استيطان</a>
-                          <a href="category.html">هدم منازل</a>
-                          <a href="category.html">اعتقالات</a>
-                          <a href="category.html">الجدار</a>
-                          <a href="category.html">الانتفاضة الثانية</a>
-                          <a href="category.html">الانتفاضة الاولى</a>
-                          <a href="category.html">مجازر اسرائيلية</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">قصص مصورة</a>
-                        </button>
-                        <a href="category.html"></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">نشاطات</a>
-                        </button>
-                        <a href="category.html"></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">شهداء فلسطين</a>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="category.html">شهداء فلسطين</a>
-                        </div>
-                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">مجلس الوزراء</a>
-                        </button>                        
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="category.html">الرئاسة</a> 
-                        </button>
-                                               
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                          <a href="index.html">الرئيسية</a>
-                        </button>
-                        
-                    </div>
-                </li>
-            </ul>
+        <ul style="border: 1px gray  solid ;" class="nav justify-content-center ">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">
+                <a href="category.html">المزيد</a>
+              </button>                        
+              <div class="dropdown-content">
+                <a href="category.html">شؤون الأسرى</a>
+                <a href="category.html">شؤون المرأة</a>
+                <a href="category.html">شخصيات</a>
+                <a href="category.html">صور مميزة</a>
+                <a href="category.html">مؤسسات فلسطينية</a>
+                <a href="category.html">مدن فلسطينية</a>
+                <a href="category.html">محليات</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="category.html">رياضة</a></button>
+              <div class="dropdown-content">
+                <a href="category.html">بطولات عالمية</a>
+                <a href="category.html">بطولات محلية</a>
+                <a href="category.html">كرة سلة</a>
+                <a href="category.html">كرة قدم</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">
+                <a href="category.html">ثقافة وتراث</a>
+              </button>                        
+              <div class="dropdown-content">
+                <a href="category.html">شؤون دينية</a>
+                <a href="category.html">معارض</a>
+                <a href="category.html">مناسبات</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">انتهاكات اسرائيلية</a>
+                  </button>
+                  
+                  <div class="dropdown-content">
+                    <a href="category.html">اغلاقات</a>
+                    <a href="category.html">حروب</a>
+                    <a href="category.html">مواجهات</a>
+                    <a href="category.html">جنازات</a>
+                    <a href="category.html">اجتياحات</a>
+                    <a href="category.html">استيطان</a>
+                    <a href="category.html">هدم منازل</a>
+                    <a href="category.html">اعتقالات</a>
+                    <a href="category.html">الجدار</a>
+                    <a href="category.html">الانتفاضة الثانية</a>
+                    <a href="category.html">الانتفاضة الاولى</a>
+                    <a href="category.html">مجازر اسرائيلية</a>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item">
+              
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">قصص مصورة</a>
+                  </button>
+                  <a href="category.html"></a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">نشاطات</a>
+                  </button>
+                  <a href="category.html"></a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">شهداء فلسطين</a>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="category.html">شهداء فلسطين</a>
+                  </div>
+                  
+              </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">مجلس الوزراء</a>
+                  </button>                        
+              </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="category.html">الرئاسة</a> 
+                  </button>
+                                          
+              </div>
+          </li>
+          <li class="nav-item">
+              <div class="dropdown">
+                  <button class="dropbtn">
+                    <a href="index.html">الرئيسية</a>
+                  </button>
+                  
+              </div>
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -536,7 +537,7 @@
           <p class="card-text" style="text-align: right; color: white;">مدن فلسطينية</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132);">
-          <a href="http://images.wafa.ps/category.aspx?catid=262">
+          <a href="category.html">
             <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
@@ -546,7 +547,7 @@
           <p class="card-text" style="text-align: right; color: white;">رياضة</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
-          <a href="http://images.wafa.ps/category.aspx?catid=262">
+          <a href="category.html">
             <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
@@ -556,7 +557,7 @@
           <p class="card-text" style="text-align: right; color: white;">ثقافة وتراث</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
-          <a href="http://images.wafa.ps/category.aspx?catid=262">
+          <a href="category.html">
             <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
@@ -566,7 +567,7 @@
           <p class="card-text" style="text-align: right; color: white;">الرئاسة</p>
         </div>
         <div style="padding: 3%; background-color:rgb(136, 132, 132) ;">
-          <a href="http://images.wafa.ps/category.aspx?catid=262">
+          <a href="category.html">
             <img style="width: 100%; height: 100%;" src="image/pictured story.JPG" class="card-img-top" alt="...">
           </a>
         </div>
